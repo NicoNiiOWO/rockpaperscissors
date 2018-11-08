@@ -6,44 +6,44 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 ## Day 1
 
 #### Planning
-- [ ] Complete the project planning document.
+- [x] Complete the project planning document.
 #### Set-Up
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/rockpaperscissors
-- [ ] Fork this repository to your github account and clone to a new workspace
-- [ ] Add, commit, and push your changes
-- [ ] Make your site live on gh-pages
+- [x] Fork this repository to your github account and clone to a new workspace
+- [x] Add, commit, and push your changes
+- [x] Make your site live on gh-pages
 
 ### JavaScript
-- [ ] Add a click handler that displays the value of the input within the div with the id `#userChoice`
+- [x] Add a click handler that displays the value of the input within the div with the id `#userChoice`
 
 
 ### HTML and CSS
-- [ ] Add any more HTML elements you will need to the page
-- [ ] Customize your HTML with CSS
+- [x] Add any more HTML elements you will need to the page
+- [x] Customize your HTML with CSS
 
 #### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 - [ ] Save and submit your website using the link on the Daily Session Document.
 
 ## Day 2
 
 ### Javascript 
 
-- [ ] Outside of your click handler, declare 3 variables (userChoice, computerChoice and winner) and assign them values of empty strings
-- [ ] Outside of your click handler, declare a randomNumber variable and set it equal to 0
-- [ ] In your click handler, generate a random number and assign it to the randomNumber variable
-- [ ] In your click handler, store the input value in the userChoice variable	
-- [ ] In your click handler, display userChoice to the screen
+- [x] Outside of your click handler, declare 3 variables (userChoice, computerChoice and winner) and assign them values of empty strings
+- [x] Outside of your click handler, declare a randomNumber variable and set it equal to 0
+- [x] In your click handler, generate a random number and assign it to the randomNumber variable
+- [x] In your click handler, store the input value in the userChoice variable	
+- [x] In your click handler, display userChoice to the screen
 #### Wrap
 - [ ] Push your changes!
 
 ## Day 3
 
 ## JavaScript
-- [ ] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to the computerChoice variable 
-- [ ] Display the computerChoice to the screen
-- [ ] Write a conditional statement that compares the userChoice to the computerChoice to determine the winner of the game
-- [ ] Display the winner to the screen in the result div
+- [x] Write a conditional statement which, given the number range of randomNumber, assigns ‘rock’, ‘paper’ or ‘scissors’ to the computerChoice variable 
+- [x] Display the computerChoice to the screen
+- [x] Write a conditional statement that compares the userChoice to the computerChoice to determine the winner of the game
+- [x] Display the winner to the screen in the result div
 - [ ] Clear the input value once a result is displayed
 
 #### Wrap
