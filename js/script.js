@@ -9,26 +9,41 @@
 
 // DOCUMENT READY FUNCTION BELOW
 
-var user;
-var cpu;
+var userChoice;
+var cpuChoice;
+var winner;
+var wins = 0;
+
 $("#shoot").click(function(){
-    user = $("#input").val();
-    var number = Math.ceil(Math.random()*3);
-    console.log(number)
-    if(number == "1"){
-        cpu = "rock";
-    }else if(number == "2"){
-        cpu = "paper";
-    }else if(number == "3"){
-        cpu = "scissors";
-    }
-    $("#userChoice").text(user);
-    $("#computerChoice").text(cpu);
-    if(user == "paper" && cpu == "rock" || user == "rock" && cpu == "scissors" || user == "scissors" && cpu == "paper"){
-        $("#result").text("User wins");
-    }else if(user == "paper" && cpu == "scissors" || user == "rock" && cpu == "paper" || user == "scissors" && cpu == "rock"){
-        $("#result").text("CPU wins");
+    userChoice = $("#input").val();
+    if(userChoice.toLowerCase() != "rock" && userChoice.toLowerCase() != "paper" && userChoice.toLowerCase() != "scissors"){
+        $("#result").text("Invalid input");
     }else{
-        $("#result").text("Tie");
+        var number = Math.ceil(Math.random()*3);
+        console.log(number);
+        if(number == "1"){
+            cpuChoice = "rock";
+        }else if(number == "2"){
+            cpuChoice = "paper";
+        }else if(number == "3"){
+            cpuChoice = "scissors";
+        }
+        $("#userChoice").text(userChoice);
+        $("#computerChoice").text(cpuChoice);
+        
+        userChoice = userChoice.toLowerCase();
+        if(userChoice == "paper" && cpuChoice == "rock" || userChoice == "rock" && cpuChoice == "scissors" || userChoice == "scissors" && cpuChoice == "paper"){
+            $("#result").text("User wins");
+            winner = "user";
+            wins++;
+            $("#wins").text("Wins: " + wins);
+        }else if(userChoice == "paper" && cpuChoice == "scissors" || userChoice == "rock" && cpuChoice == "paper" || userChoice == "scissors" && cpuChoice == "rock"){
+            $("#result").text("CPU wins");
+            winner = "cpu";
+        }else{
+            $("#result").text("Tie");
+            winner = "";
+        }
+        $("#input").val("");
     }
 })
