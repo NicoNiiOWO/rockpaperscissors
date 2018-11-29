@@ -7,6 +7,7 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 
 #### Planning
 - [x] Complete the project planning document.
+
 #### Set-Up
 - [x] Go to the repository at https://github.com/ScriptEdcurriculum/rockpaperscissors
 - [x] Fork this repository to your github account and clone to a new workspace
@@ -34,6 +35,7 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 - [x] In your click handler, generate a random number and assign it to the randomNumber variable
 - [x] In your click handler, store the input value in the userChoice variable	
 - [x] In your click handler, display userChoice to the screen
+
 #### Wrap
 - [x] Push your changes!
 
@@ -50,7 +52,7 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 - [x] Push your changes!
 
 ## Projects Extensions:
-- [ ] Style the page to fit your personality
+- [x] Style the page to fit your personality
 - [x] Validates input so that it will return “Not valid input” if the user types in a wrong choice. 
 - [x] Accepts any form of a word regardless of capitalization (i.e. “Rock” “rock” roCk”)
 - [x] Keeps track of total wins and losses, until the page refreshes. 

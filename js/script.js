@@ -13,6 +13,7 @@ var userChoice;
 var cpuChoice;
 var winner;
 var wins = 0;
+var losses = 0;
 
 $("#shoot").click(function(){
     userChoice = $("#input").val();
@@ -40,6 +41,8 @@ $("#shoot").click(function(){
         }else if(userChoice == "paper" && cpuChoice == "scissors" || userChoice == "rock" && cpuChoice == "paper" || userChoice == "scissors" && cpuChoice == "rock"){
             $("#result").text("CPU wins");
             winner = "cpu";
+            losses++;
+            $("#losses").text("Losses: " + losses);
         }else{
             $("#result").text("Tie");
             winner = "";
